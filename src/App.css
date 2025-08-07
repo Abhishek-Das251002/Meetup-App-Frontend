@@ -1,0 +1,11 @@
+/* App.css */
+
+body {
+  margin: 0; /* like default browser */
+  font-family: sans-serif; /* optional */
+}
+
+#root {
+  padding: 0;
+  margin: 0;
+}

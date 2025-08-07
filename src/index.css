@@ -1,0 +1,50 @@
+/* index.css */
+
+:root {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: block; /* override flex from Vite */
+  background-color: #fff;
+  color: #000;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* Optional: Remove prefers-color-scheme for simplicity */
