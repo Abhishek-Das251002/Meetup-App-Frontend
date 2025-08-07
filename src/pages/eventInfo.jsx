@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const MoreDetails = () => {
     const {id} = useParams()
     console.log(id)
-    const {data, loading, error} = useFetch(`https://meetup-app-backend-theta.vercel.app/events/${id}`)
+    const {data, loading, error} = useFetch(`https://meetup-app-backend-ten.vercel.app/events/${id}`)
     console.log(data)
     return (
         <div className="bg-body-tertiary">

@@ -2,7 +2,7 @@ import useFetch from "../useFetch";
 
 
 const Header = ({setRqdEvents}) => {
-    const {data, loading, error} = useFetch("https://meetup-app-backend-theta.vercel.app/events")
+    const {data, loading, error} = useFetch("https://meetup-app-backend-ten.vercel.app/events")
 
     const handleSrchChange = (e) => {
         const {value} = e.target
