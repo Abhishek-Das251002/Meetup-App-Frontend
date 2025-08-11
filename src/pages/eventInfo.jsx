@@ -12,6 +12,15 @@ const MoreDetails = () => {
     return (
         <div className="bg-body-tertiary">
         <div className="container">
+            <div className="bg-body-tertiary">
+            <nav className="navbar  container">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="/">
+                        <img src="https://www.pngitem.com/pimgs/m/41-418117_meetup-logo-new-meet-up-logo-png-transparent.png" alt="mainLogo" className="img-fluid" width="150"/> 
+                    </a>  
+                </div>
+            </nav>
+            </div>
             <hr />
             {loading && <p>Loading...</p>}
             {data && 
