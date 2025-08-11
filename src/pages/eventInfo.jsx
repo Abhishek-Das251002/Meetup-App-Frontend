@@ -16,7 +16,7 @@ const MoreDetails = () => {
             <nav className="navbar  container">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
-                        <img src="https://www.pngitem.com/pimgs/m/41-418117_meetup-logo-new-meet-up-logo-png-transparent.png" alt="mainLogo" className="img-fluid" width="150"/> 
+                        <img src="https://www.pngitem.com/pimgs/m/41-418117_meetup-logo-new-meet-up-logo-png-transparent.png" alt="mainLogo" className="img-fluid  pt-2 " width="25%" /> 
                     </a>  
                 </div>
             </nav>
@@ -24,35 +24,24 @@ const MoreDetails = () => {
             <hr />
             {loading && <p>Loading...</p>}
             {data && 
-            <div className="row mt-5">
-                <div className="col-8">
+            <div className="row mt-lg-5 mt-md-3 mt-sm-2">
+                <div className="col-xl-8 col-lg-6 col-md-12 col-sm-12">
                     <h2>{data.name}</h2>
                     <section className="pb-3">
                         <span>Hosted By:</span><br />
                         <h4>{data.hostName.join(", ")}</h4>
                     </section>
                     <img src={data.eventImgUrl} alt="eventImg" className="d-flex justify-content-start img-fluid" width="700" />
-                    <section className="py-3 w-75">
+                    <section className="py-3">
                         <h3>Details: </h3>
+                        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-9">
                         <p>{data.eventDetails}</p>
-                    </section>
-                    <section>
-                        <h3>Additional Information: </h3>
-                         {Object.entries(data.additionalInfo).map(([key, value]) => (
-                            <p><strong>{key.charAt(0).toUpperCase() + key.slice(1)}: </strong>{value}</p>
-                         ))}                     
-                    </section>
-                    <section>
-                    <h3>Event Tags: </h3>
-                        {data.tags.map(tag => (
-                            <div className="badge bg-danger p-2 text-white  fs-6 fw-light text-wrap p-3 m-2" >
-                                {tag}
-                            </div>                    
-                        ))}.
+                        </div>
                     </section>
                 </div>
-                <div className="col-4">
-                    <div className="card">
+                
+                <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                    <div className="card ms-xl-0 ms-lg-5">
                         <div className="card-body">
                             <div className="row">
                                 <div className="col-2">
@@ -111,14 +100,14 @@ const MoreDetails = () => {
                             </div>                            
                         </div>
                     </div>
-                    <section className="mt-4">
+                    <section className="mt-4 ms-xl-0 ms-lg-5">
                         {data.speakers && 
                             <>
                             <h2>Speakers: ({data.speakers.length})</h2>
-                            <div className="row mt-3">
+                            <div className="row d-flex">
                                 {data.speakers.map(speaker => (
-                                    <div className="col-6">
-                                    <div className="card">
+                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-3">
+                                    <div className="card h-100">
                                         <div className="card-body text-center">
                                             <img src={speaker.speakerImgUrl} alt="speakerImg" className="img-fluid rounded-circle mb-3" width="100" /><br />
                                             <strong>{speaker.name}</strong><br />
@@ -131,6 +120,23 @@ const MoreDetails = () => {
                             </div>
                             </>
                         }
+                    </section>
+                </div>
+
+                <div className="col-xl-6 col-lg-6 col-md-12 mt-md-4 mt-sm-4 col-sm-12 mt-4">
+                    <section>
+                        <h3>Additional Information: </h3>
+                         {Object.entries(data.additionalInfo).map(([key, value]) => (
+                            <p><strong>{key.charAt(0).toUpperCase() + key.slice(1)}: </strong>{value}</p>
+                         ))}                     
+                    </section>
+                    <section>
+                    <h3>Event Tags: </h3>
+                        {data.tags.map(tag => (
+                            <div className="badge bg-danger p-2 text-white  fs-6 fw-light text-wrap p-3 m-2" >
+                                {tag}
+                            </div>                    
+                        ))}.
                     </section>
                 </div>
             </div>
