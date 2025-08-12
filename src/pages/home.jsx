@@ -26,20 +26,24 @@ export const AllEvents = ({rqdEvents}) => {
 
     return (
         <>
-        <div className="d-flex ">
-        <h1 className="me-auto">Meetup Events</h1>
-        <select className="form-select w-25" value={eventType} onChange={handleChange}>
-            <option value="">Select Event Type...</option>
-            <option value="both">Both</option>
-            <option value="offline">Offline</option>
-            <option value="online">Online</option>
-        </select>
+        <div className="row">
+            <div className="col-lg-9 col-md-6 col-sm-12">
+                <h1>Meetup Events</h1>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12">
+                <select className="form-select" value={eventType} onChange={handleChange}>
+                <option value="">Select Event Type...</option>
+                <option value="both">Both</option>
+                <option value="offline">Offline</option>
+                <option value="online">Online</option>
+                </select>
+            </div>
         </div>
         {loading && <p>Loading...</p>}
         {finalData && 
         <div className="row">
             {filteredEvents.map(event => (
-                <div className="col-4 my-4">
+                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-4">
                     <div className="position-relative" style={{aspectRatio: "1/1", overflow: "hidden"}}>
                         <div className="position-absolute badge bg-light text-wrap text-dark  top-0 m-3 fs-5 fw-normal z-1">
                             {`${event.type} Event`}
