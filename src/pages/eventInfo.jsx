@@ -134,7 +134,7 @@ const MoreDetails = () => {
                     <h3>Event Tags: </h3>
                         <div className="d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row">
                             {data.tags.map(tag => (
-                                <div className="badge bg-danger p-sm-2 p-2 p-md-3 text-white  fs-lg-6 fs-xl-6 fw-light text-wrap m-2" style={{width: "30%"}}>
+                                <div className="badge bg-danger p-sm-2 p-2 p-md-3 text-white fw-light text-wrap m-2" style={{width: "30%"}}>
                                     {tag}
                                 </div>                    
                             ))}
