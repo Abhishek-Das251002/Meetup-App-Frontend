@@ -16,7 +16,7 @@ const MoreDetails = () => {
             <nav className="navbar  container">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
-                        <img src="https://www.pngitem.com/pimgs/m/41-418117_meetup-logo-new-meet-up-logo-png-transparent.png" alt="mainLogo" className="img-fluid  pt-2 " width="25%" /> 
+                        <img src="https://www.pngitem.com/pimgs/m/41-418117_meetup-logo-new-meet-up-logo-png-transparent.png" alt="mainLogo" className="img-fluid  pt-2 " style={{width: "25%"}} /> 
                     </a>  
                 </div>
             </nav>
@@ -134,7 +134,7 @@ const MoreDetails = () => {
                     <h3>Event Tags: </h3>
                         <div className="d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row">
                             {data.tags.map(tag => (
-                                <div className="badge bg-danger p-2 text-white  fs-lg-6 fs-xl-6 fw-light text-wrap p-3 m-2" style={{width: "25%", height: "10%"}}>
+                                <div className="badge bg-danger p-sm-2 p-2 p-md-3 text-white  fs-lg-6 fs-xl-6 fw-light text-wrap m-2" style={{width: "30%"}}>
                                     {tag}
                                 </div>                    
                             ))}
