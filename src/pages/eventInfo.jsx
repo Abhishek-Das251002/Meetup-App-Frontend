@@ -130,13 +130,15 @@ const MoreDetails = () => {
                             <p><strong>{key.charAt(0).toUpperCase() + key.slice(1)}: </strong>{value}</p>
                          ))}                     
                     </section>
-                    <section>
+                    <section >
                     <h3>Event Tags: </h3>
-                        {data.tags.map(tag => (
-                            <div className="badge bg-danger p-2 text-white  fs-6 fw-light text-wrap p-3 m-2" >
-                                {tag}
-                            </div>                    
-                        ))}.
+                        <div className="d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row">
+                            {data.tags.map(tag => (
+                                <div className="badge bg-danger p-2 text-white  fs-lg-6 fs-xl-6 fw-light text-wrap p-3 m-2" style={{width: "20%", height: "10%"}}>
+                                    {tag}
+                                </div>                    
+                            ))}
+                        </div>
                     </section>
                 </div>
             </div>
