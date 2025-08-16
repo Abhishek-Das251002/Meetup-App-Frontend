@@ -1,6 +1,6 @@
 import { useState } from "react"
 import useFetch from "../useFetch"
-
+import { Link } from "react-router-dom"
 
 export const AllEvents = ({rqdEvents}) => {
     const {data, loading, error} = useFetch("https://meetup-app-backend-ten.vercel.app/events")
@@ -48,7 +48,7 @@ export const AllEvents = ({rqdEvents}) => {
                         <div className="position-absolute badge bg-light text-wrap text-dark  top-0 m-3 fs-5 fw-normal z-1">
                             {`${event.type} Event`}
                         </div>
-                        <a href={`eventDetails/${event._id}`}><img src={event.eventImgUrl} alt="eventImg" className="rounded img-fluid w-100 h-100 object-fit-cover" /></a>
+                        <Link to={`eventDetails/${event._id}`}><img src={event.eventImgUrl} alt="eventImg" className="rounded img-fluid w-100 h-100 object-fit-cover" /></Link>
                     </div>
                     <span className="text-secondary">
                     {new Date(event.date).toLocaleString('en-IN', {

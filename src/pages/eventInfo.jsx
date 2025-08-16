@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../useFetch";
 import Footer from "../components/Footer";
-
+import { Link } from "react-router-dom";
 
 
 const MoreDetails = () => {
@@ -15,9 +15,9 @@ const MoreDetails = () => {
             <div className="bg-body-tertiary">
             <nav className="navbar  container">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/">
+                    <Link className="navbar-brand" to="/">
                         <img src="https://www.pngitem.com/pimgs/m/41-418117_meetup-logo-new-meet-up-logo-png-transparent.png" alt="mainLogo" className="img-fluid  pt-2 " style={{width: "25%"}} /> 
-                    </a>  
+                    </Link>  
                 </div>
             </nav>
             </div>

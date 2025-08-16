@@ -1,5 +1,5 @@
 import useFetch from "../useFetch";
-
+import { Link } from "react-router-dom";
 
 const Header = ({setRqdEvents}) => {
     const {data, loading, error} = useFetch("https://meetup-app-backend-ten.vercel.app/events")
@@ -17,9 +17,9 @@ const Header = ({setRqdEvents}) => {
         <div className="container">
             <div className="row w-100 align-items-center">
                 <div className="col-xl-9 col-lg-9 col-md-6 col-sm-12">
-                    <a className="navbar-brand" href="/">
+                    <Link className="navbar-brand" to="/">
                     <img src="https://www.pngitem.com/pimgs/m/41-418117_meetup-logo-new-meet-up-logo-png-transparent.png" alt="mainLogo" className="img-fluid" style={{width: "25%"}}/> 
-                    </a>
+                    </Link>
                 </div> 
                 <div className="mt-sm-2 col-xl-3  col-lg-3 col-md-6 col-sm-12 d-flex ms-xl-auto"> 
                     <input className="form-control" role="search" onChange={handleSrchChange} type="search" placeholder="Search by title and tag..." aria-label="Search"/>
