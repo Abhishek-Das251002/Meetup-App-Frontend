@@ -1,5 +1,5 @@
 # MeetUp App
-A full-stack Event Management Web App built using React, Node.js, Express, and MongoDB, featuring dynamic event listings, search, and type-based filtering.
+A full-stack Event Management Web App built using React, Node.js, Express, and MongoDB, featuring dynamic event listings, search, and type-based filtering.<br>
 Implements REST APIs, responsive UI, and component-based architecture to manage and display detailed event data efficiently.
 
 ---
