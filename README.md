@@ -1,12 +1,84 @@
-# React + Vite
+# MeetUp App
+A full-stack Event Management Web App built using React, Node.js, Express, and MongoDB, featuring dynamic event listings, search, and type-based filtering.
+Implements REST APIs, responsive UI, and component-based architecture to manage and display detailed event data efficiently.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
+## Demo Link
+[Live Demo]()
 
-Currently, two official plugins are available:
+---
+## Quick Start
+```
+git clone https://github.com/Abhishek-Das251002/Meetup-App-Frontend.git
+cd Meetup-App-Frontend
+npm install
+npm run dev
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+## Technologies
+**Frontend Technologies**
 
-## Expanding the ESLint configuration
+- React.js
+- React Router DOM
+- JavaScript (ES6+)
+- Bootstrap 5
+- HTML5 & CSS3
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Backend Technologies**
+
+- Node.js
+- Express.js
+- RESTful APIs
+
+**Database**
+
+- MongoDB
+
+---
+## Demo Video
+Watch a walkthrough (5–7 minutes) of all major features of this app: [Video Link]()
+
+---
+## Features
+**Event Listing**
+
+- Displays all events with key details (title, date, type)
+- Real-time search by event title and tags
+- Filter events by type (Online, Offline, Both)
+
+**Event Details**
+
+- Dedicated page for each event
+- View complete event information including topic, description, timings, speakers, pricing, address, and tags
+
+**UI & Layout**
+
+- Consistent, responsive layout across all pages
+- Clean, component-based UI for better usability and scalability
+
+---
+## API Reference
+
+### **GET /events**
+
+Fetch all available events.
+Returns a list of all events stored in the database.
+
+Sample Response:
+```
+[{ _id, title, date, ...}, ...]
+```
+### **GET /events/:id**
+
+Fetch details of a single event by ID.
+Returns complete details for a specific event.
+
+Sample Response:
+```
+{ _id, title, date, ...}
+```
+
+---
+## Contact
+For bugs or feature requests, please reach out to abhishekgautam1966@gmail.com
