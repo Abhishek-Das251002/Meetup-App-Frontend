@@ -4,7 +4,7 @@ Implements REST APIs, responsive UI, and component-based architecture to manage 
 
 ---
 ## Demo Link
-[Live Demo]("https://meetup-app-frontend-snowy.vercel.app/")
+[Live Demo](https://meetup-app-frontend-snowy.vercel.app/)
 
 ---
 ## Quick Start
