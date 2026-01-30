@@ -4,7 +4,8 @@ Implements REST APIs, responsive UI, and component-based architecture to manage 
 
 ---
 ## Demo Link
-[Live Demo](https://meetup-app-frontend-snowy.vercel.app/)
+[Live Demo](https://meetup-app-frontend-snowy.vercel.app/
+)
 
 ---
 ## Quick Start
@@ -14,7 +15,14 @@ cd Meetup-App-Frontend
 npm install
 npm run dev
 ```
+---
+## Environment Setup
+Create a ```.env``` file in the backend root directory and add the following environment variables:
 
+```
+PORT = 3000
+MONGODB_URI=your_mongodb_atlas_connection_string
+```
 ---
 ## Technologies
 **Frontend Technologies**
@@ -43,19 +51,19 @@ Watch a walkthrough (5–7 minutes) of all major features of this app: [Video Li
 ## Features
 **Event Listing**
 
-- Displays all events with key details (title, date, type)
-- Real-time search by event title and tags
-- Filter events by type (Online, Offline, Both)
+- View all events with key details such as title, date, and type
+- Search events in real time by title and tags
+- Filter events by type including online, offline, or both
 
 **Event Details**
 
-- Dedicated page for each event
-- View complete event information including topic, description, timings, speakers, pricing, address, and tags
+- View a dedicated details page for each event
+- Access complete event information including topic, description, timings, speakers, pricing, address, and tags
 
 **UI & Layout**
 
-- Consistent, responsive layout across all pages
-- Clean, component-based UI for better usability and scalability
+- Experience a consistent and responsive layout across all pages
+- Use a clean, component-based UI for improved usability and scalability
 
 ---
 ## API Reference
