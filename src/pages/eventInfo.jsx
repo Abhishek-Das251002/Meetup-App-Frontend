@@ -16,7 +16,7 @@ const MoreDetails = () => {
             <nav className="navbar  container">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
-                        <img src="https://www.pngitem.com/pimgs/m/41-418117_meetup-logo-new-meet-up-logo-png-transparent.png" alt="mainLogo" className="img-fluid  pt-2 " style={{width: "25%"}} /> 
+                        <img src="/assets/allImgs/logo.jpg" alt="mainLogo" className="img-fluid  pt-2 " style={{width: "25%"}} /> 
                     </Link>  
                 </div>
             </nav>
