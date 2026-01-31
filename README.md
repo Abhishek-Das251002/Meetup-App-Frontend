@@ -45,7 +45,7 @@ MONGODB_URI=your_mongodb_atlas_connection_string
 
 ---
 ## Demo Video
-Watch a walkthrough (5–7 minutes) of all major features of this app: [Video Link]()
+Watch a walkthrough (5–7 minutes) of all major features of this app: [Video Link](https://drive.google.com/file/d/1bKuYRrAjRRdaGLEg7gMWZnIkobiDwRVm/view?usp=sharing)
 
 ---
 ## Features
