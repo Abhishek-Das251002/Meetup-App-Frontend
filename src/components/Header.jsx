@@ -18,7 +18,7 @@ const Header = ({setRqdEvents}) => {
             <div className="row w-100 align-items-center">
                 <div className="col-xl-9 col-lg-9 col-md-6 col-sm-12">
                     <Link className="navbar-brand" to="/">
-                    <img src="https://www.pngitem.com/pimgs/m/41-418117_meetup-logo-new-meet-up-logo-png-transparent.png" alt="mainLogo" className="img-fluid" style={{width: "25%"}}/> 
+                    <img src="/assets/allImgs/logo.jpg" alt="mainLogo" className="img-fluid" style={{width: "25%"}}/> 
                     </Link>
                 </div> 
                 <div className="mt-sm-2 col-xl-3  col-lg-3 col-md-6 col-sm-12 d-flex ms-xl-auto"> 
